@@ -29,7 +29,12 @@ def find_average_time(processes, n, bt):
     print("Average Turnaround Time: ", total_tat/n)
 
 if __name__ == "__main__":
-    processes = [1, 2, 3]
-    burst_time = [10, 5, 8]
+    
+    burst_time = []
+    n = int(input("Enter number of processes: "))
+    processes = [i for i in range(1, n + 1)]
+
+    for i in range(n):
+        burst_time.append(int(input(f"P{i + 1}: ")))
 
     find_average_time(processes, len(processes), burst_time)
