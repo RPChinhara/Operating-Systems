@@ -1,6 +1,4 @@
 # Implementation of LFU page replacement algorithm
-
-from typing import List
 from collections import defaultdict
 
 
